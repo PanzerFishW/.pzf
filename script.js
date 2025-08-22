@@ -343,22 +343,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-setTimeout(() => {
-  const hint = document.createElement('div');
-  hint.className = 'constructor-hint';
-  hint.innerHTML = `
-    <p>Не можете сформулировать задачу?</p>
-    <a href="about.html">Попробуйте наш конструктор →</a>
-    <button class="close-hint">&times;</button>
-  `;
-  document.body.appendChild(hint);
-  
-  document.querySelector('.close-hint').addEventListener('click', () => {
-    hint.remove();
-  });
-}, 20000);
-
-
 const privacyOverlay = document.getElementById('privacyOverlay');
 const privacyAccept = document.getElementById('privacyAccept');
 const privacyDecline = document.getElementById('privacyDecline');
